@@ -10,6 +10,19 @@
   <%= @cliente.apellidos %>
 </p>
 
+<table>
+	<% @cliente.productos.each do |producto| %>
+		<tr>
+			<td><%= producto.descripcion %></td>
+			<td><%= producto.precio %></td>			
+		</tr>			
+	<% end %>
+	<tr>
+	<td>Total: </td>
+	<td>total</td>
+	</tr>
+</table>
+
 <p>
   <b>Nro tarjeta:</b>
   <%= @cliente.nro_tarjeta %>

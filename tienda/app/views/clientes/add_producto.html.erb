@@ -3,8 +3,7 @@
 <%= simple_form_for(@cliente) do |f| %>
 	<%= f.association :productos, :as => "check_boxes" %>
 	<br />
-	
-	<p>Total: </p>
+		
 	<%= f.button :submit %>
 		
 <% end %>
