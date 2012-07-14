@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @cliente.nombre %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @cliente.apellidos %>
+</p>
+
+<p>
+  <b>Nro tarjeta:</b>
+  <%= @cliente.nro_tarjeta %>
+</p>
+
+<%= link_to 'Agregar producto', add_producto_cliente_path(@cliente) %>
+<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
+<%= link_to 'Back', clientes_path %>
